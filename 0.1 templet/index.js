@@ -35,3 +35,4 @@ function keyPressed(){
     ShiftPage(key)
     
 }
+console.log("hej")
