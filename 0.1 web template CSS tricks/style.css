@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    position:fixed;
+    top:0;
+    left:-100vw;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    display:grid;
+    place-items:center;
+    transition: 1.0s all ease-in-out;
+
+}
+
+
+
+.visible{
+    left:0 ;
+}
+.box{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+    border: 1px solid white;
+}
+
+#imagebox{
+    background-image: url(./assets/photo-1720048170970-3848514c3d60.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+#page1{
+    background-color: red;
+}
+
+#page2{
+    background-color: blue;
+}
+
+h1{
+    font-family: Raleway;
+    color:blue;
+ 
+
+}
+#page2{
+    h1{
+        color: black;
+    }
+}
+#page3{
+    background-color: yellow;
+    
+
+}
+#page4{
+    background-color: darkmagenta;
+}
