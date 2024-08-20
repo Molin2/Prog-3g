@@ -1,4 +1,4 @@
-let currentPage = 3
+let currentPage = 4
 let pages //array med akke class og page
 let colors =['red', 'green', 'blue', 'hotpink','lightblue', 'lightgreen', 'darkblue' ]
 

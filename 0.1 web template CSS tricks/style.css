@@ -28,6 +28,25 @@
     display: grid;
     place-items: center;
     border: 1px solid white;
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: whitesmoke;
+
+}
+.fixed{
+    bottom: fixed;
+    top: 2rem;
+    left: 2rem;
+    color: red;
+    font-size: 3rem;
+    font-variant: small-caps;
+    text-shadow: 12px 12px 2px black;
+
 }
 
 #imagebox{
