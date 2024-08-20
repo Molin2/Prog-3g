@@ -1,12 +1,19 @@
-let currentPage = 1
+let currentPage = 3
 let pages //array med akke class og page
+let colors =['red', 'green', 'blue', 'hotpink','lightblue', 'lightgreen', 'darkblue' ]
 
 
 function setup(){
-    console.log("Grim")
     select('#page' + currentPage).addClass('visible')
     pages = selectAll('.page')
     console.log(pages.length)
+
+    for(c of colors){
+        console.log(c)
+        let div = createDiv()
+        div.style('background-color', c)
+        select('#page3').child(div)
+    }
     
 }
 
@@ -32,4 +39,3 @@ function keyPressed(){
     ShiftPage(key)
     
 }
-console.log("hej")
