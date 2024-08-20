@@ -23,11 +23,7 @@ function ShiftPage(num){
     select("#page" + currentPage).removeClass("visible")
     currentPage = num
     select("#page" + currentPage).addClass("visible")
-    if(num){
-        console.log("så er der noget galt")
-        
- 
-    }
+  
 
 }
 
