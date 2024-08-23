@@ -14,6 +14,15 @@ header{
     grid-template-columns: repeat(4, 1fr);
 
 }
+
+header#leftmenu{
+    width: 25vw;
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 10rem);
+    background-color: orange;
+}
+
 .menuitem{
     width: 100%;
     height: 100%;
@@ -34,13 +43,15 @@ header{
 .menuitem.active{
     border-bottom: 6px solid red;
 }
+
 .page{
     position:fixed;
     top:0;
     left:-100vw;
-    width: 100vw;
-    height: 94vh;
-    top: 6vh;
+    width: 80vw;
+    margin-left: 20vw;
+    height: 100vh;
+    top: 0vh;
     overflow:hidden;
     display:grid;
     place-items:center;
