@@ -42,10 +42,10 @@
     bottom: fixed;
     top: 2rem;
     left: 2rem;
-    color: red;
+    color: yellow;
     font-size: 3rem;
     font-variant: small-caps;
-    text-shadow: 12px 12px 2px black;
+    text-shadow: 18px 18px 2px yellowgreen;
 
 }
 
@@ -57,6 +57,7 @@
 
 .halfbox{
     grid-template-columns: 3fr 1fr;
+    color: hotpink;
 }
 #rightImage{
     width: 100%;
