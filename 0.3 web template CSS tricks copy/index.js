@@ -14,7 +14,7 @@ function setup(){
     pages = selectAll('.page')
     menuitem = selectAll('.menuitem')
 
-    //menuitem skal reagewre med at skifte side
+    //menuitem skal reagere med at skifte side
 
     for( m of menuitem ){
         m.mousePressed(function(e){
@@ -29,6 +29,10 @@ function setup(){
 
     
     ShiftPage(currentPage)
+    //vent to sekunder og sæt klassen "hidden på header - så menuen bliver væk"
+    setTimeout(function(){
+        select('header').addClass('hidden')
+    }, 1000)
     
 }
 
