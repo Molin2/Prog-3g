@@ -23,7 +23,7 @@ header.hidden{
 
 
 header.hidden:hover{
-
+transition: ease-in-out;
 }
 
 .menuitem{
