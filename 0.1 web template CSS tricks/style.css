@@ -59,7 +59,10 @@ header{
     display: grid;
     place-items: center;
     border: 1px solid white;
-    position: relative;
+    position: relative;¨
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
 .absolute{
     position: absolute;
@@ -81,14 +84,22 @@ header{
 }
 
 #imagebox{
-    background-image: url(./assets/photo-1720048170970-3848514c3d60.png);
+    background-image: url(./assets/assasin.png);
     background-size: cover;
     background-position: center center;
+        color: #ffffff; /* Hvid tekstfarve for høj kontrast */
+        font-size: 4rem; /* Øger tekststørrelsen */
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Stærkere skygge for at fremhæve teksten */
+        background-color: rgba(0, 0, 0, 0.5); /* Halvtransparent sort baggrund */
+        padding: 0.5rem; /* Tilføjer lidt padding for at adskille teksten fra baggrunden */
+        border-radius: 0.5rem; /* Gør kanterne lidt runde for et pænere udseende */
+    }
+    
 }
 
 .halfbox{
     grid-template-columns: 3fr 1fr;
-    color: hotpink;
+    color: black;
 }
 #rightImage{
     width: 100%;
@@ -97,8 +108,11 @@ header{
     background-size: cover;
 }
 
-#page1{
+#page1 {
     background-color: red;
+    background-image: url(./assets/assasin.png);
+    background-size: cover; /* Gør billedet så stort, at det dækker hele siden */
+    background-position: center center; /* Centerer billedet */
 }
 
 #page2{
