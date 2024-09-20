@@ -1,24 +1,11 @@
-let currentPage = 1
-let menuNumber = 1
+let currentPage = 4
 let pages //array med akke class og page
-let menuitem //array med alle menuitems
 let colors =['red', 'green', 'blue', 'hotpink','lightblue', 'lightgreen', 'darkblue' ]
 
 
 function setup(){
-    select("#page" + currentPage).addClass("visible")
-    select('#menu' + menuNumber).addClass('active')
+    select('#page' + currentPage).addClass('visible')
     pages = selectAll('.page')
-    menuitem = selectAll('.menuitem')
-
-    for( m of menuitem ){
-        m.mousePressed(function(e){
-            console.log(e.target.id)
-            //slice er -1 henter det sidste bogstav i en string
-            let nr = e.target.id.slice(-1)
-            ShiftPage(nr)
-        })
-    }
     console.log(pages.length)
 
     for(c of colors){
@@ -44,10 +31,6 @@ function ShiftPage(num){
     currentPage = num
     select("#page" + currentPage).addClass("visible")
   
-    select("#menu" + menuNumber).removeClass("active")
-    menuNumber = num
-    select("#menu" + menuNumber).addClass("active")
-  
 
 }
 
@@ -56,4 +39,3 @@ function keyPressed(){
     ShiftPage(key)
     
 }
-
