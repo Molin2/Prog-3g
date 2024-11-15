@@ -23,13 +23,20 @@ class Clock{
         this.div.style('padding', '1rem')
         this.div.style('border-radius', '2rem')
         //reager på argumentet style fra constructor 
-         switch(style){
+         switch(style.background){
             case 'pink': this.div.style('background', 'hotpink')
             return
             case 'black':
                 this.div.style('background', 'black')
                 this.div.style('color', 'white')
+                return
 
+
+         }
+         switch(style.shape){
+            case 'cirkel':
+                this.div.style('height', '16rem')
+                this.div.style('border-radius', '50%')
          }
 
 

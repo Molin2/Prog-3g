@@ -1,7 +1,14 @@
 
 
 function setup(){
-    let c = new Clock( select('#clock') , 'pink')
+
+
+    let styles = {
+        background: 'black', 
+        shape: 'cirkel',
+
+    }
+    let c = new Clock( select('#clock') , styles)
     c.start()
     
 }
