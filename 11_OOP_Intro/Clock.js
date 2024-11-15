@@ -1,7 +1,7 @@
 console.log('clock is here')
 
 class Clock{
-    //constructor er classenns "setup funktion og den kaldes når der kommer nye objekter i klassen"
+    //constructor er classenns "setup" funktion og den kaldes når der kommer nye objekter i klassen
     constructor(div, style){
         this.div = div
         this.style = style
