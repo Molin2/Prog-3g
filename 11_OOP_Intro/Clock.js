@@ -4,7 +4,8 @@ class Clock{
     //constructor er classenns "setup" funktion og den kaldes når der kommer nye objekter i klassen
     constructor(div, style){
         this.div = div
-        this.style = style
+        this.style = shape
+        this.background = style.background
         //hours minutes and seconds
         this.hDiv = createDiv()
         this.mDiv = createDiv()
@@ -25,11 +26,11 @@ class Clock{
         //reager på argumentet style fra constructor 
          switch(style.background){
             case 'pink': this.div.style('background', 'hotpink')
-            return
+            break
             case 'black':
                 this.div.style('background', 'black')
                 this.div.style('color', 'white')
-                return
+                break
 
 
          }
@@ -37,6 +38,7 @@ class Clock{
             case 'cirkel':
                 this.div.style('height', '16rem')
                 this.div.style('border-radius', '50%')
+                break
          }
 
 
